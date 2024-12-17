@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Notas</title>
+    <link rel="stylesheet" href="css/notes.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header>
+        <h1>Notas</h1>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Buscar nota..." oninput="searchNotes()">
+            <button onclick="logout()">Cerrar sesión</button>
+        </div>
+        <button onclick="window.location.href='create-note.html'">Crear Nueva Nota</button>
+    </header>
+
+    <!-- Contenedor de las notas -->
+    <div id="notes-container">
+        <!-- Las notas se cargarán aquí con JavaScript -->
+    </div>
+
+    <script src="js/notes.js"></script>
+</body>
+</html>
